@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "creation": "2021-04-26 10:32:14.099671",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "coil_no",
+  "tube_size",
+  "thickness",
+  "length",
+  "column_break_5",
+  "prime_tube",
+  "prime_tube_wt",
+  "cq",
+  "cq_wt",
+  "open",
+  "open_wt",
+  "total_tube",
+  "total_tube_wt"
+ ],
+ "fields": [
+  {
+   "fieldname": "coil_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Coil No",
+   "options": "Serial No",
+   "width": "1"
+  },
+  {
+   "fieldname": "tube_size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tube Size",
+   "width": "1"
+  },
+  {
+   "fieldname": "thickness",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Thickness",
+   "width": "1"
+  },
+  {
+   "fieldname": "length",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Length",
+   "width": "1"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prime_tube",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Prime tube",
+   "width": "1"
+  },
+  {
+   "fieldname": "prime_tube_wt",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Prime tube WT"
+  },
+  {
+   "fieldname": "cq",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CQ"
+  },
+  {
+   "fieldname": "cq_wt",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CQ WT"
+  },
+  {
+   "fieldname": "open",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Open"
+  },
+  {
+   "fieldname": "open_wt",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Open WT"
+  },
+  {
+   "fieldname": "total_tube",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Tube"
+  },
+  {
+   "fieldname": "total_tube_wt",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Tube WT"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-09-12 19:11:40.799301",
+ "modified_by": "Administrator",
+ "module": "Aarti Steel PLC",
+ "name": "Job Card Tube Mill Process",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

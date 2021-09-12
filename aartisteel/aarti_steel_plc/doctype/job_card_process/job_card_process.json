@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "autoname": "field:input_coil_no",
+ "creation": "2021-04-17 08:55:49.004538",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "input_coil_no",
+  "input_thick",
+  "input_width",
+  "input_weight",
+  "grade",
+  "plan_thick",
+  "rolling_thick",
+  "column_break_8",
+  "output_coil_no",
+  "output_weight",
+  "coil_end",
+  "yield",
+  "next_process",
+  "reduction"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "input_coil_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Input Coil No",
+   "options": "Serial No",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "input_coil_no.thick",
+   "fieldname": "input_thick",
+   "fieldtype": "Float",
+   "label": "Input Thick(mm)",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "input_coil_no.width",
+   "fieldname": "input_width",
+   "fieldtype": "Data",
+   "label": "Input Width(mm)",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "input_coil_no.weight",
+   "fieldname": "input_weight",
+   "fieldtype": "Float",
+   "label": "Input Weight(mt)",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "input_coil_no.grade",
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade",
+   "read_only": 1,
+   "width": "1"
+  },
+  {
+   "columns": 1,
+   "fieldname": "plan_thick",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Plan Thick(mm)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "rolling_thick",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rolling Thick(mm)"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "output_coil_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Output Coil No",
+   "options": "Serial No"
+  },
+  {
+   "columns": 2,
+   "fetch_from": "output_coil_no.weight",
+   "fieldname": "output_weight",
+   "fieldtype": "Float",
+   "label": "Output Weight(mt)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "coil_end",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Coil End"
+  },
+  {
+   "columns": 1,
+   "fieldname": "yield",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Yield"
+  },
+  {
+   "columns": 1,
+   "fieldname": "next_process",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Next Process",
+   "options": "\nTRIM\nREW"
+  },
+  {
+   "columns": 1,
+   "fieldname": "reduction",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Reduction"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-09-12 19:11:29.993471",
+ "modified_by": "Administrator",
+ "module": "Aarti Steel PLC",
+ "name": "Job Card Process",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

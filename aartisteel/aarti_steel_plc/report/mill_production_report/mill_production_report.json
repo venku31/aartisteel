@@ -1,0 +1,31 @@
+{
+ "add_total_row": 1,
+ "creation": "2021-04-16 13:59:16.417337",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2021-04-22 12:20:09.105163",
+ "modified_by": "Administrator",
+ "module": "Aarti Steel PLC",
+ "name": "Mill Production Report",
+ "owner": "venkatesh.nayak@atriina.com",
+ "prepared_report": 0,
+ "query": "Select `tabJob Card`.posting_date as \"Date:Date:80\",\n`tabJob Card`.operation as \"Process:Data:80\",\n`tabJob Card`.work_order as \"Order No:Data:150\",\n`tabJob Card Process`.input_coil_no as \"Input Coil No:Data:100\",\n`tabJob Card Process`.input_thick as \"Input Thick(mm):Data:100\",\n`tabJob Card Process`.input_width as \"Input Width(mm):Data:100\",\n`tabJob Card Process`.input_weight as \"Input Weight(mm):Data:100\",\n`tabJob Card Process`.grade as \"Grade:Data:80\",\n`tabJob Card Process`.plan_thick as \"Plan Thick(mm):Data:100\",\n`tabJob Card Process`.rolling_thick as \"Rolling Thick(mm):Data:100\",\n`tabJob Card Process`.output_coil_no as \"Output Coil No:Data:100\",\n`tabJob Card Process`.output_weight as \"Output Weight(mt):Data:100\",\n(`tabJob Card Process`.output_weight/`tabJob Card Process`.input_weight)*100  as \"Yeild:Data:100\"\nfrom `tabJob Card`,`tabJob Card Process`\nwhere `tabJob Card Process`.parent=`tabJob Card`.name and `tabJob Card`.docstatus=1 and `tabJob Card`.operation=\"CRM\"",
+ "ref_doctype": "Job Card",
+ "report_name": "Mill Production Report",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Manufacturing User"
+  },
+  {
+   "role": "Manufacturing Manager"
+  }
+ ]
+}

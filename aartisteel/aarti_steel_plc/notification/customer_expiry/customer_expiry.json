@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2021-08-21 10:52:09.996927",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Customer",
+ "enabled": 1,
+ "event": "Custom",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "{% if doc.remaining_days.days == 0 %}\n{{ doc.document_type }} document of {{ doc.customer_name }} expired today...\n{% else %}\n{{ doc.document_type }} document of {{ doc.customer_name }} expired within {{ doc.remaining_days.days }} days...\n{% endif %}",
+ "modified": "2021-08-31 17:07:52.273088",
+ "modified_by": "Administrator",
+ "module": "Aarti Steel PLC",
+ "name": "Customer Expiry",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "cc": "kunj.aartisteels@gmail.com,\nkamlesh@atriina.com",
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "{{ doc.document_type }} expired soon!"
+}
